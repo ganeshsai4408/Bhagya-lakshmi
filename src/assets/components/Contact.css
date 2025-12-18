@@ -1,0 +1,121 @@
+/* Contact section: two-column rounded panel */
+.contact {
+  padding: 48px 16px;
+}
+
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #2b2b6b;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.9));
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.contact-left {
+  background: #6D6FB3; /* purple panel */
+  color: white;
+  padding: 36px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 480px; /* increased height */
+  background-image: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.left-cta {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+}
+
+.left-contacts {
+  text-align: left;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.left-line {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-line .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.left-line a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-right {
+  padding: 28px 36px;
+  background:#D5D6E9;
+}
+
+.form-title {
+  
+  text-align: left; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 25px; 
+  margin: 0 0 12px 0;
+  font-weight: 600;
+   color: #111; }
+
+.contact-form label { 
+  text-align: left; 
+  display:block; 
+   font-size:16px; 
+   color:#000000; 
+   margin-top:10px; 
+   font-weight: 400;
+  }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.15);
+  margin-top:6px;
+  box-sizing: border-box;
+}
+
+.send-btn {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 16px;
+  background:#43469D ;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%; /* make button full width */
+  font-weight: 500;
+}
+
+@media (max-width: 880px) {
+  .contact-panel { grid-template-columns: 1fr; }
+  .contact-left { min-height: 220px; }
+}

@@ -1,0 +1,111 @@
+/* ProsCons component styles: two rounded cards with inner pill panels and colored dots */
+.proscons {
+  padding: 56px 20px;
+  background: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.proscons-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.proscons-title {
+  text-align: center;
+  font-size: 28px;
+  color: #2b2b6b; /* deep bluish purple */
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.proscons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch; /* ensure cards match height */
+}
+
+.pc-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0px 4px 4px 0px #00000040; /* updated to requested shadow */
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.pc-card:hover {
+  box-shadow: 5px 20px 4px 0px #00000040; /* enhanced shadow on hover */
+  transform: translateY(-4px); /* subtle lift effect */
+}
+
+.pc-heading {
+  text-align: center;
+  margin: 8px 0 16px 0;
+  font-size: 32px;
+  color: #111;
+  font-weight: 700;
+}
+
+.pc-inner {
+  background: rgba(0,0,0,0.02);
+  border-radius: 28px;
+  padding: 26px;
+  flex: 1 1 auto; /* allow inner panel to expand so cards match */
+}
+
+.pc-inner-left {
+  background: rgba(246, 221, 221, 0.9); /* soft pink */
+}
+
+.pc-inner-right {
+  background: rgba(232, 236, 250, 0.95); /* soft blue/purple */
+}
+
+.pc-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 6px;
+}
+
+.pc-inner li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 12px 0;
+  color: #333;
+  line-height: 2;
+  font-size: 14px;
+  text-align: left;
+
+
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 6px;
+  flex: 0 0 12px;
+}
+
+.dot-pink { background: #f28b9a; }
+.dot-blue { background: #5963d6; }
+
+/* responsive: stack on small screens */
+@media (max-width: 880px) {
+  .proscons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proscons-inner {
+    padding: 0 8px;
+  }
+
+  .proscons-title {
+    font-size: 22px;
+  }
+}

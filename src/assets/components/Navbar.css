@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Montserrat:wght@400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth; /* smooth scroll when clicking anchor links */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px; /* reduced overall navbar padding */
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  border-bottom: 2px solid rgba(94,84,204,0.06);
+  /* slightly stronger drop shadow to lift the navbar */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | center links | right */
+  align-items: center;
+  gap: 8px; /* tightened spacing */
+}
+
+.logo-text {
+  font-family: 'Girassol', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 400;
+  font-style: normal; /* Regular */
+  font-size: 36px;
+  line-height: 1; /* 100% */
+  letter-spacing: 0;
+  color: #43469D;
+}
+
+/* Center area: keep links centered regardless of logo/button widths */
+.nav-center {
+  justify-self: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 72px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2b2b37;
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: 0.2px;
+  transition: color 0.18s ease, transform 0.12s ease;
+}
+
+.nav-links a:hover {
+  color: #5E50C8;
+  transform: translateY(-1px);
+}
+
+/* Right area (contact button) */
+.nav-right {
+  justify-self: end;
+}
+
+.contact-btn {
+  background: linear-gradient(180deg,#5e50c8,#5145b8);
+  color: #fff;
+  border: none;
+  padding: 8px 20px; /* reduced button padding */
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(94,84,204,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.12s ease;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(0.98);
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav-container { grid-template-columns: 1fr auto; }
+  .nav-center { display: none; }
+}

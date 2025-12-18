@@ -1,0 +1,78 @@
+/* Testimony section styles */
+.testimony {
+  padding: 44px 16px;
+}
+
+.testimony-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimony-title {
+  text-align: center;
+  color: #2b2b6b;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 45px;
+}
+
+.testimony-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.test-card {
+  background: #f6f6f8;
+  border-radius: 12px;
+  padding: 22px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px #00000040; /* requested shadow */
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.test-card:hover {
+  box-shadow: 5px 20px 4px 0px #00000040; /* enhanced shadow on hover */
+  transform: translateY(-4px); /* subtle lift effect */
+}
+
+/* quote-mark removed — SVG not used anymore */
+
+.quote-body {
+  font-size: 17px;
+  font-family: Montserrat, sans-serif;
+  color: #0c0000;
+  line-height: 1.7;
+  flex: 1 1 auto;
+  text-align: left;
+  font-weight: 500;
+}
+
+.quote-author {
+  text-align: right;
+  color: #2b2b6b;
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .testimony-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimony-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .test-card {
+    min-height: 200px;
+  }
+}
