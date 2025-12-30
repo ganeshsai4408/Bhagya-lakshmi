@@ -8,7 +8,7 @@ const data = {
   review: {
     title: 'Architectural Plan Review',
     text:
-      'A detailed review of your existing architectural plan to ensure it follows GHMC and Telangana building regulations. The plan is checked for setbacks, FAR, zoning, parking, and ventilation standards. Potential issues that may cause approval delays or rejections are identified early. Clear and practical guidance is provided on what needs to be corrected. This helps avoid repeated submissions and unnecessary redesigns, making the approval process smoother and more predictable.',
+      'A detailed review of your existing architectural plan to ensure it complies with Build-Now guidelines and All Urban Local Bodies (ULB) regulations in Telangana. The plan is evaluated for setbacks, FAR, zoning norms, parking provisions, and ventilation standards. Potential issues that could lead to approval delays or rejections are identified at an early stage. Clear, practical guidance is provided on the required corrections, helping you avoid repeated submissions and unnecessary redesigns—making the approval process smoother, faster, and more predictable',
     img: planImg,
   },
   correction: {
