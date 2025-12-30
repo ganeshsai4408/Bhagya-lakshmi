@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #eee9e9;
+  background: #F9FAFC;
 ; /* page background requested by user */
   min-height: 100vh;
 }
