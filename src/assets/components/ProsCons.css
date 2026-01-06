@@ -95,10 +95,29 @@
 .dot-pink { background: #f28b9a; }
 .dot-blue { background: #5963d6; }
 
-/* responsive: stack on small screens */
+/* Enhanced responsive design for all screen sizes */
+@media (max-width: 1024px) {
+  .proscons {
+    padding: 48px 20px;
+  }
+  
+  .proscons-inner {
+    max-width: 900px;
+  }
+  
+  .proscons-grid {
+    gap: 24px;
+  }
+}
+
 @media (max-width: 880px) {
+  .proscons {
+    padding: 40px 16px;
+  }
+  
   .proscons-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .proscons-inner {
@@ -106,6 +125,93 @@
   }
 
   .proscons-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .pc-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proscons {
+    padding: 32px 16px;
+  }
+  
+  .proscons-title {
     font-size: 22px;
+  }
+  
+  .pc-card {
+    padding: 18px;
+  }
+  
+  .pc-heading {
+    font-size: 24px;
+    margin: 6px 0 14px 0;
+  }
+  
+  .pc-inner {
+    padding: 20px;
+  }
+  
+  .pc-inner li {
+    font-size: 13px;
+    gap: 12px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .proscons {
+    padding: 28px 12px;
+  }
+  
+  .proscons-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .pc-card {
+    padding: 16px;
+  }
+  
+  .pc-heading {
+    font-size: 22px;
+  }
+  
+  .pc-inner {
+    padding: 18px;
+    border-radius: 20px;
+  }
+  
+  .pc-inner li {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    flex: 0 0 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .proscons-title {
+    font-size: 18px;
+  }
+  
+  .pc-heading {
+    font-size: 20px;
+  }
+  
+  .pc-inner {
+    padding: 16px;
+  }
+  
+  .pc-inner li {
+    font-size: 11px;
   }
 }
