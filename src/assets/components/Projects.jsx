@@ -1,27 +1,27 @@
 import React from 'react';
 import './Projects.css';
 
-import img1 from '../logo/pro-img.jpg';
-import img2 from '../logo/pro-img.jpg';
-import img3 from '../logo/pro-img.jpg';
+import img1 from '../logo/project-1.jpeg';
+import img2 from '../logo/project-2.jpeg';
+import img3 from '../logo/project-3.jpeg';
 
 const projects = [
   {
-    title: 'Residential Complex - Banjara Hills',
+    title: 'GVR Breeze – Sainikpuri',
     desc:
-      'Residential Complex compliance review and plan correction for a 5-story residential building, ensuring adherence to GHMC setback and FAR requirements.',
+      'Architectural design reviewed and cross-checked against GHMC building regulations.',
     img: img1,
   },
   {
-    title: 'Residential Complex - Banjara Hills',
+    title: 'GVR Central Vistas – Yapral',
     desc:
-      'Residential Complex compliance review and plan correction for a 5-story residential building, ensuring adherence to GHMC setback and FAR requirements.',
+      'Reviewed the architectural layout to verify alignment with GHMC planning norms.',
     img: img2,
   },
   {
     title: 'Residential Complex - Banjara Hills',
     desc:
-      'Residential Complex compliance review and plan correction for a 5-story residential building, ensuring adherence to GHMC setback and FAR requirements.',
+      'Ensuring adherence to GHMC setback and FAR requirements.',
     img: img3,
   },
 ];
