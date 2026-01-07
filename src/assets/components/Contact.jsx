@@ -1,7 +1,40 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
+  const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage('');
+
+    // EmailJS configuration
+    // Replace these with your actual EmailJS credentials
+    const serviceId = 'service_kqrbpl3';
+    const templateId = 'template_rlwfwaw';
+    const publicKey = 'Aehtb8IbScf9AD-CX';
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, publicKey)
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          setMessage('Message sent successfully!');
+          setIsSubmitting(false);
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setMessage('Failed to send message. Please try again.');
+          setIsSubmitting(false);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="contact-inner">
@@ -34,18 +67,21 @@ const Contact = () => {
 
           <div className="contact-right">
             <h3 className="form-title">Get in touch</h3>
-            <form className="contact-form" onSubmit={(e)=>e.preventDefault()}>
+            <form ref={form} className="contact-form" onSubmit={sendEmail}>
               <label>Name</label>
-              <input type="text" name="name" />
+              <input type="text" name="user_name" required />
 
               <label>Email</label>
-              <input type="email" name="email" />
+              <input type="email" name="user_email" required />
 
               <label>Message</label>
-              <textarea name="message" rows="5" />
+              <textarea name="message" rows="5" required />
 
-              <button className="send-btn">send message</button>
+              <button className="send-btn" type="submit" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'send message'}
+              </button>
             </form>
+            {message && <p style={{marginTop: '10px', color: message.includes('success') ? '#4caf50' : '#f44336'}}>{message}</p>}
           </div>
         </div>
       </div>
