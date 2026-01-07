@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import profileImage from '../hero-pic/Gemini_Generated_Image_gu7ir4gu7ir4gu7i.png';
+import profileImage from '../hero-pic/hero-img.jpeg';
 
 const Hero = () => {
   return (

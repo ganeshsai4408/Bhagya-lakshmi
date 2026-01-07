@@ -4,17 +4,17 @@ import './Testimony.css';
 const items = [
   {
     quote:
-      "Bhagya Lakshmi's expertise saved us months of delays. Her thorough compliance review identified issues we never would have caught, and the plan was approved on first submission.",
+      "Her review helped us avoid multiple approval issues. The corrections were clear and accurate, and the plan moved forward without delays.",
     author: '-Pravallika',
   },
   {
     quote:
-      "Bhagya Lakshmi's expertise saved us months of delays. Her thorough compliance review identified issues we never would have caught, and the plan was approved on first submission.",
+      "Clear communication and precise corrections. The plan was approval-ready after her review, which saved us a lot of time.",
     author: '-Pravallika',
   },
   {
     quote:
-      "Bhagya Lakshmi's expertise saved us months of delays. Her thorough compliance review identified issues we never would have caught, and the plan was approved on first submission.",
+      "Strong understanding of GHMC and Telangana regulations.Her clear dance significantly reduced approval time for our project.",
     author: '-Pravallika',
   },
 ];
