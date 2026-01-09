@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
-import img1 from '../logo/project-1.jpeg';
+import img1 from '../logo/project-1.png';
 import img2 from '../logo/project-2.png';
 import img3 from '../logo/project-3.jpeg';
 

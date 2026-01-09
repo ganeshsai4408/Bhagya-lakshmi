@@ -61,6 +61,15 @@
   font-weight: 600;
 }
 
+.quote-designation {
+  text-align: right;
+  color: #666;
+  margin-top: 4px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Enhanced responsive design for all screen sizes */
 @media (max-width: 1024px) {
   .testimony {
@@ -103,6 +112,10 @@
   .quote-author {
     font-size: 15px;
   }
+  
+  .quote-designation {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -133,6 +146,10 @@
   .quote-author {
     font-size: 14px;
   }
+  
+  .quote-designation {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -159,6 +176,10 @@
     font-size: 13px;
     margin-top: 10px;
   }
+  
+  .quote-designation {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -178,5 +199,9 @@
   
   .quote-author {
     font-size: 12px;
+  }
+  
+  .quote-designation {
+    font-size: 10px;
   }
 }
